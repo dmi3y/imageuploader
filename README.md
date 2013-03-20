@@ -1,17 +1,17 @@
-**PURPOSES**
+**PURPOSES**  
 Show javascript code example
 
-**DESCRIPTION**
+**DESCRIPTION**  
 File API image uploader for modern browsers
 
-**FEATURES**
-Validate image size dimentions and extention on client side before sending any requests
+**FEATURES**  
+Validate image size, dimentions and extention on client side before sending any requests
 
-**TODO**
+**TODO**  
 Work it out as a workable snippet
 
-**COPYRIGHTS**
+**COPYRIGHTS**  
 BSD
 
-**CONTACTS**
+**CONTACTS**  
 lapshukov@gmail.com
