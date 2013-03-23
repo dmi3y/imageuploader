@@ -1,7 +1,6 @@
 /*!
  * jQuery image uploader 
  * Original author: @lapshukov
- * Further changes, comments: @addyosmani
  * Licensed under the MIT license
  */
 
@@ -21,16 +20,23 @@
         uploadedSizes: [],
         expectedSizes: [],
         filter: /^(?:image\/bmp|image\/cis\-cod|image\/gif|image\/ief|image\/jpeg|image\/jpeg|image\/jpeg|image\/pipeg|image\/png|image\/svg\+xml|image\/tiff|image\/x\-cmu\-raster|image\/x\-cmx|image\/x\-icon|image\/x\-portable\-anymap|image\/x\-portable\-bitmap|image\/x\-portable\-graymap|image\/x\-portable\-pixmap|image\/x\-rgb|image\/x\-xbitmap|image\/x\-xpixmap|image\/x\-xscopedump)$/i,
+    },
+
+    _methods = {
+        
     };
 
     // helper DOM manipulator, actually bare dom element, which needs some assistantce stylesheets short proto http://jsbin.com/azeday/1/edit
-    var imageManipulator = $(options.imageManipulatorSelector)[0] || $("body").append("<img " + options.imageManipulatorSelector + " />").end().find(options.imageManipulatorSelector)[0];
+    var imageManipulator = $(options.imageManipulatorSelector)[0] || $("body").append("<img " + options.imageManipulatorSelector + " />").end().find(options.imageManipulatorSelector)[0],
+    $imageManipulator = $(imageManipulator);
 
-    // to make it inbox, place asset styles inline
-    $(imageManipulator).css({
+    // to make it inbox, place asset styles inline @TODO make it optional for neat freaks as I am
+    $imageManipulator.css({
         visibility: "hidden",
         position: "absolute"
     });
+
+
 
 
     // checking out the existance of necessary APIs
@@ -84,8 +90,7 @@
             _debug = false,
             _debugLog = function(log) {
                 return _debug? console.log(log): null;
-            }
-            ;
+            };
             
         // file reader onload event listerer
         oFReader.onload = function(ev) { // manipulate with image, use when we need define exact dementions
