@@ -9,10 +9,10 @@ Validate image size, dimentions and extention on client side before sending any 
 
 ##TODO  
 
--Work it out as a workable snippet
-	-Reuse into the flexible pattern
--Prepare Tests
--Prepare Demo
+-Work it out as a workable snippet  
+	-Reuse into the flexible pattern  
+-Prepare Tests  
+-Prepare Demo  
 
 ##COPYRIGHTS  
 MIT
